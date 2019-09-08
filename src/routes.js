@@ -1,10 +1,12 @@
 import { createStackNavigator } from 'react-navigation';
 
 import Main from './pages/main';
+import Product from './pages/product';
 
 export default createStackNavigator(
     {
-        Main
+        Main,
+        Product
     },
     {
         navigationOptions: {
@@ -13,9 +15,9 @@ export default createStackNavigator(
             },
             headerTintColor: '#FFF',
             headerTitleStyle: {
-                textAlign: 'center',
-                flex: 1,
-                fontWeight: 'bold'
+                fontWeight: 'bold',
+                flexGrow: 1,
+                textAlign: 'center'
             }
         }
     }
